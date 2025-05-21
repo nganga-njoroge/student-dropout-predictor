@@ -32,3 +32,25 @@ Predicting student dropout risk using demographic and academic features. This is
 ---
 
 ## ✅ Status: Ready to Start
+
+## 🧠 Day 3 – Baseline Model Training
+
+### ✅ Tasks Completed:
+- Loaded and prepared the dataset using `prepare_data.py`
+- Encoded categorical features and split data using stratified train-test split
+- Trained two models:
+    - Logistic Regression (linear baseline)
+    - Decision Tree (nonlinear, interpretable)
+- Evaluated both using:
+    - Classification report (Precision, Recall, F1)
+    - Confusion matrix
+
+### 🔍 Key Observations:
+- Dropout class is reasonably separable even with basic features
+- Decision Tree may overfit — worth testing regularization
+- Logistic Regression provides solid baseline for ROC and interpretability
+
+### 🛠 Next Steps:
+- Try Random Forest or XGBoost
+- Tune hyperparameters
+- Handle class imbalance (class weights or resampling)
